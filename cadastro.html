@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Talison Amorim">
+    <link rel="shortcut icon" href="images/logo02.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza House – Cadastro</title>
+
+    <!-- Autores: Talison Amorim, Rafael Pontes-->
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><img class="logo" src="images/logo-02-branco-cortado.png" alt="logo pizza house"></a>
+            <ul>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="fale-conosco.html">Fale conosco</a></li>
+                <li><a href="cadastro.html">Login/Cadastre-se</a></li>
+                <li>
+                    <input class="search-bar" type="search" placeholder="Pesquisar">
+                    <button class="btn-buscar" type="submit">Buscar</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--main do Talison-->
+    <main class="tan">
+
+        <section class="cont">
+            <h1>Seu Cadastro</h1>
+            <p>Você precisa ser cadastrado ou já ter um cadastro.</p>
+        </section>
+        <!--inicio do formulario de login-->
+        <section class="form">
+            <section id="log">
+                <form method="POST">
+                    <div class="cabeca">
+                        <h3>Já é cadastrado?</h3>
+                        <p>Então entre em contato com seus dados de login e senha</p>
+                    </div>
+                    <div class="corp">
+                        <p class="cont2">
+                            <label for="cMail">E-mail <br></label><input type="email" name="tMail" id="cMail" size="40"
+                                maxlength="40" required>
+                        </p>
+                        <p class="cont2"><label for="cSenha">Senha <br></label> <input type="password" name="tSenha"
+                                id="cSenha" size="8" maxlength="8" placeholder="8 digitos" required> </p>
+
+                        <div class="secA">
+                            <a href="#">Esqueci meu email</a>
+                            <a href="#">Esqueci minha senha</a><br>
+                        </div>
+
+                        <div class="but">
+                            <button type="reset">Limpar</button>
+                            <button type="submit">Entrar</button>
+                        </div>
+                    </div>
+            </section>
+            <section id="cad">
+                </form>
+                <!--inicío formulario de cadastro-->
+                <form method="POST">
+                    <div class="cabeca">
+                        <h3>Ainda não é cadastrado no site?</h3>
+                        <p>Faça agora mesmo seu cadasto, é simples e rápido!</p>
+                    </div>
+
+                    <div class=corp>
+                        <p class="cont2"><label for="cMailI">E-mail: <br></label> <input type="email" name="tMailI"
+                                id="cMailI" size="40" maxlength="40" required></p>
+                        <p class="cont2"><label for="cSenhaI">Senha: <br></label> <input type="password" name="tSenhaI"
+                                id="cSenhaI" size="8" maxlength="8" placeholder="8 digitos" required></p>
+                        <p class="cont2"><label for="cSenhaII">Confirme Senha: <br></label> <input type="password"
+                                name="tSenhaII" id="cSenhaII" size="8" maxlength="8" placeholder="8 digitos" required>
+                        </p>
+                        <p class="cont2"><label for="cCPF">CPF: <br></label> <input type="text" name="tCPF" id="cCPF"
+                                size="20" maxlength="11" placeholder="Somente números"> </p>
+                        <div class="but">
+                            <button type="reset">Limpar</button>
+                            <button type="submit">Cadastrar</button>
+                        </div>
+                    </div>
+            </section>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="menu-footer">
+            <nav>
+                <ul id="list1-footer">
+                    <li>Cardápio</li>
+                    <li><a href="cardapio.html">Pizzas Tradicionais</a></li>
+                    <li><a href="cardapio.html">Pizzas Especiais</a></li>
+                    <li><a href="cardapio.html">Pizzas Doces</a></li>
+                </ul>
+            </nav>
+            <nav id="list2-footer">
+                <a href="quem-somos.html">Quem somos</a>
+                <a href="fale-conosco.html">Fale conosco</a>
+                <a href="cadastro.html">Login/Cadastre-se</a>
+                <a href="https://www.instagram.com/pizzahousegoiatuba/" target="_blank"><span class="iconify"
+                        data-icon="brandico:instagram" data-inline="false"></span></a>
+                <a href="https://www.facebook.com/Super-Pizza-Goiatuba-276482939151246/" target="_blank"><span class="iconify"
+                        data-icon="bi:facebook" data-inline="false"></span></a>
+            </nav>
+        </section>
+        <section id="copy">
+            <p>Copyright &copy; @2021 Pizza House - Rua Maranhão n° 433, Centro - Esquina com Av. Amazonas, Goiatuba-GO
+            </p>
+        </section>
+        <a href="http://api.whatsapp.com/send?phone=+5564123456789" target="_blank"><img class="wpp-pic" src="images/WhatsApp.svg" alt="whatsapp"></a>
+    </footer>
+</body>
+
+<!-- Autores: Elis Alcantara, Jade Oliveira, Pamela Oliveira, Sergio Amaral-->
+
+</html>

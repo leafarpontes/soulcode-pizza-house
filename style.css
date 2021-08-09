@@ -1,0 +1,855 @@
+/* 
+    Início do CSS da página index.hml ~Rafa
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Hahmlet:wght@400;700&family=Inter:wght@400;700&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    cursor: url(cursor.cur), pointer;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(17,21,28);
+    background: linear-gradient(180deg, rgba(17,21,28,1) 0%, rgba(167,17,3,1) 100%, rgba(51,51,51,1) 203%, rgba(105,105,105,1) 203%);
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 25%);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo {
+    height: 100px;
+    margin-top: 7px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+header ul li {
+    text-transform: uppercase;
+    display: inline;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+
+header a:hover {
+    color: rgba(255, 255, 255, 0.507);
+}
+
+.search-bar {
+    padding: 3px;
+    width: 10vw;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.btn-buscar {
+    padding-right: 0.7vw;
+    padding-left: 0.7vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.btn-buscar:hover {
+    background-color: #A71103;
+    color: white;
+    border-color: white;
+}
+
+/*  --- OLD FOOTER --
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167, 17, 3);
+    height: 11vh;
+    width: 100vw;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+} */
+
+.wpp-pic {
+    height: 40px;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+}
+
+/* 
+    Fim do CSS da página index.hml ~Rafa
+*/
+
+/*
+    Inicio do CSS da parte main ~Pamela
+*/
+
+#bannerindex {
+    background: url(images/banner1-base.jpg);
+    height: 90vh; 
+    color: rgb(227, 236, 219);
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    font-size: 4em; 
+    text-transform: uppercase;
+}
+
+#bannerindex a {
+    transition: 0.4s;
+    text-decoration: none;
+    color: rgb(167, 17, 3);
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 10vh;
+}
+
+#bannerindex a:hover {
+    font-size: 10.5vh;
+    color: white;
+}
+
+#pedido{
+    text-transform: uppercase;
+    background-color: rgb(167, 17, 3);
+    color: rgb(156, 38, 38);
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+#pedido p {
+    font-family: 'Alfa Slab One', cursive;
+    color: white;
+    letter-spacing: 3px;
+}
+
+#pedido a {
+    text-shadow: 0 0 13px rgba(105,105,105,1);
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#pedido a:hover {       
+    font-size: 1.05em;
+    color: #28282B;
+}
+
+#linkcardapio{ 
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#linkcardapio a {
+    transition: 0.2s;
+    text-decoration: none;
+    font-family: 'Alfa Slab One', cursive;
+    color: #28282B;
+}
+
+#linkcardapio a:hover {
+    font-size: 120%;
+}
+
+.colunas-cardapio{
+    height: 60vh; 
+    background-color: rgb(246, 246, 246);
+    color: rgb(156, 38, 38);
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 1.7em;
+}
+
+@media (max-width:1280px){
+    .colunas-cardapio {
+        height: 80vh;
+    }
+}
+
+.colunas-cardapio a h1 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.imagens-menu {
+    width: 280px;
+}
+
+.index-main {
+    background-color: rgb(246, 246, 246);
+}
+
+/* footer pamela */
+
+footer {
+    background-color: rgb(167, 17, 3);    
+    color: white;
+}
+ 
+#menu-footer{
+    display: flex; 
+    justify-content: center;
+    border-bottom: solid 1px white;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+ 
+#list1-footer {
+    text-transform: uppercase;
+    list-style: none; 
+    padding-left: 1vw; 
+    padding-right: 3vw; 
+    padding-top: 1.1vw;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.4s;   
+}
+ 
+#list1-footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.4s; 
+}
+ 
+#list2-footer a{
+    text-transform: uppercase;
+    padding-left: 1vw;
+    padding-right: 3vw;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+ 
+#list2-footer a:hover, #list1-footer a:hover {
+    color: rgba(255, 255, 255, 0.507);
+}
+ 
+#copy{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+ 
+.iconify{
+    font-size: xx-large;
+}
+
+/* 
+    Fim do CSS da página index.html ~Pamela
+*/
+
+/* 
+    Começo do CSS da página quem-somos.html ~Elis
+*/
+
+.MAINGIF{
+    height: 80vh;
+    width: 100%;
+    background-image: url(images/pizzagif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.abtus {
+    height: 43vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "IMAGEMSN TEXTOSN";
+    background-color: rgb(167, 17, 3); 
+}
+
+.IMAGEMSN { grid-area: IMAGEMSN; }
+
+.TEXTOSN { 
+    grid-area: TEXTOSN; 
+    height: 50vh;
+}
+ 
+#IMGpizzaria{
+    width: 100%;
+    height: 35vh;
+}
+#Psn{
+    font-size: 2.5vw;
+    height: 25vh;
+    width: 95%;
+    text-align: justify;
+    color: rgb(246, 246, 246);
+}
+#H1sn{
+    font-size: 3vw;
+    color: rgb(246, 246, 246);
+    padding-bottom: 10px;
+}
+ 
+.SECONDs {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "d1 VIDEOi"
+    "d2 d3";
+    height: 100vh;
+}
+ 
+#IVIDEO{
+    height: 59vh;
+    width: 100%;
+}
+
+.VIDEOi { grid-area: VIDEOi; }
+.d1 { grid-area: d1; }
+.d2 { grid-area: d2; }
+.d3{ grid-area: d3;}
+.d1, .d2, .d3{
+    background-color:  rgb(246, 246, 246);
+}
+
+.h1DESC1{
+    background-color: #28282B;
+    color:rgb(167, 17, 3);
+    font-size: 3vw;
+    text-align: center;
+}
+.h1DESC{
+    padding: 1.6vh;
+    background-color: #28282B;
+    color: rgb(167, 17, 3);
+    font-size: 3vw;
+    text-align: center;
+}
+ 
+.pDESC{
+    color: #28282B;
+    margin: 3vh;
+    font-size: 1.8vw;
+    text-align: justify;
+}
+.pDESC1{
+    color:  #28282B;
+    font-size: 1.8vw;
+    text-align: justify;
+    margin: 3vh;
+}
+.sec4 {
+    margin: 10px;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "R1SEC4 R2SEC4 R3SEC4";
+}
+.R1SEC4, .R2SEC4, .R3SEC4{
+    height: 55vh;
+    width: 100%;
+}
+ 
+.R1SEC4 { 
+    grid-area: R1SEC4; 
+    background-color:#28282B;
+}
+#h1SEC4, #h1SEC42{
+    font-size: 1.8vw;
+    text-align: center;
+    color: rgb(246, 246, 246); 
+}
+#h1SEC42{
+    color: #28282B;
+}
+ 
+#SEC4p, .SEC4p2{
+    font-size: 1.5vw;
+    text-align: justify;
+    margin: 3vh;
+    height: 18vh;
+}
+.SEC4p2{
+    color: rgb(246, 246, 246);
+    margin: 3vh;
+}
+.imgsSEC4{
+    height: 25vh;
+}
+ 
+.R2SEC4 { 
+    grid-area: R2SEC4; 
+    background-color: rgb(246, 246, 246);
+}
+ 
+.R3SEC4 { 
+    grid-area: R3SEC4;
+    background-color:#28282B;
+}
+ 
+.icons_sec4{
+    width: 10vw;
+    height: 20vh;
+}
+ 
+.mapaa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "googlemaps";
+    height: 65vh;
+    background-color: rgb(246, 246, 246); 
+    margin: 10px;
+    position: sticky;
+}
+ 
+.googlemaps { 
+    grid-area: googlemaps; 
+    text-align: center;
+}
+ 
+#gmap{
+    width: 100%;
+    height: 50vh;
+    overflow: auto;
+}
+ 
+#H1mapa{
+    font-size: 3vw;
+    text-align: center;
+    color:rgb(246, 246, 246);
+    background-color: rgb(167, 17, 3); 
+}
+
+/* 
+    Fim do CSS da página Quem Somos ~Elis
+*/
+
+/* 
+    Começo do CSS da página Cadastro ~Talison
+*/
+
+.tan {
+    background-color: rgb(246, 246, 246);
+    padding-bottom: 50px;
+}
+
+.cont{
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.cont > h1{
+    color: rgb(167, 17, 3);
+}
+.cont> p{
+    color: #28282B;
+}
+.form{
+    display: flex;
+    flex-wrap:wrap-reverse;
+    height: auto;
+    width: 65%;
+    margin: 0 auto;
+}
+.form> #cad , #log{
+    flex: 1 1 200px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px 0px;
+}
+#cad , #log{
+padding: 10px;
+margin: 10px;
+border-radius: 5px;
+background-color: rgb(167, 17, 3);
+}
+.cabeca{
+    text-align:center;
+    border-top: solid 2px #28282B;
+    border-bottom: solid 2px #28282B;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(246, 246, 246);
+}
+.cabeca> p{
+    color: #28282B;
+    font-size: 0.85em;
+}
+.cabeca> h3{
+    color: rgb(167, 17, 3);
+    font-size: 1.3em;
+}
+.corp{
+    border-top: solid 2px #28282B;
+    border-bottom: solid 2px #28282B;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: rgb(246, 246, 246);
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.secA a {
+    text-decoration: underline;
+    margin-right: 10px;
+    color: #28282B;
+    font-size: 0.90em;
+}
+
+.cont2>input{
+    background-color: #DBDBDB;
+    border: 1px solid #CCCCCC;
+    border-left: 4px solid rgb(167, 17, 3);
+    color: #28282B;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 2px;
+
+}.but > button{
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: rgb(167, 17, 3);
+    padding: 6px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px #28282B;
+    cursor: pointer;
+}
+@media (max-width:1280px){
+    .form{
+        width: 85%;
+}
+}
+
+/* 
+    Fim do CSS da página Cadastro ~Talison
+*/
+
+/* 
+    Começo do CSS da página cardapio.html ~Sergio
+*/
+
+.bebidas{
+    grid-row: 11;
+    grid-column: 1 / 4;
+    align-items: center;
+    margin: 0 auto;
+    box-align: center;
+    padding: 20px;    
+}
+
+.btn{
+    font-size: 18px;
+    font-weight: 700;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+    background-color: rgb(167, 17, 3);
+    border-radius: 10px 10px 10px 10px;
+    text-align: absolute;
+    margin:0 auto;
+}
+
+.cardapio {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(246, 246, 246);
+    text-decoration:none;
+    position: fixed;
+    left: 30vw;
+    right: 29vw;
+    z-index: 2;
+}
+
+.doces{
+    grid-row: 9;
+    grid-column: 1 / 4;
+    align-items: center;
+    margin: 0 auto;
+    box-align:center;
+}
+
+.especiais{
+    grid-row: 4;
+    grid-column: 1 / 4;
+    align-items: center;
+    margin: 0 auto;
+    box-align: stretch;
+}
+
+.flex{
+    display:flex;
+    margin: 0 auto;
+}
+
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 800px;
+    grid-column-gap: 30px;
+    grid-column: 480px;
+    margin:0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    margin-bottom: 20px;
+
+}
+.conteudo h1, h2{
+    text-align: center;
+    margin-top:50px;
+}
+.conteudo p{
+    color: #28282B; 
+}
+
+.conteudo .imgs_cardapio {
+    max-width: 100%;
+    display: block;
+    width: 320px;
+    height: 200px;
+    margin: 10px;
+    flex: 1 1 200px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.menu li:hover {
+    background-color: rgba(167,17,3,1);
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    align-content: center;
+    text-decoration: none;
+    color: #28282B;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.menu li a:hover {
+    color: white;
+}
+
+.sobrem{
+    grid-row: 15;
+    grid-column: 1 / 4;
+    align-items: center;
+    margin: 0 auto;
+    box-align:center;
+    padding: 20px;    
+}
+
+.tradicional{
+    grid-row: 1;
+    grid-column: 1 / 4;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tipo1, .tipo2, .tipo3{
+    margin:30px;
+}
+
+.zoom .imgs_cardapio {
+      max-width: 100%;
+      -moz-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+}
+
+.zoom:hover .imgs_cardapio {
+    -moz-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+}
+
+.imgs_cardapio{
+    width: 15vw;
+    height: 20vh;
+}
+
+
+/*  
+    Fim do CSS da página cardapio.html ~Sergio
+*/
+
+/* 
+    Começo do CSS da página fale-conosco.html ~Jade
+*/
+
+#pai1 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    background-color: rgb(246, 246, 246);
+  }
+  
+  #banner{
+    background: url(images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+  }
+  
+  .banner-text{
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 5vh;    
+    padding-top: 10vh;
+    color: white;
+    letter-spacing: 3px;
+  }
+  
+  #filho1 {    
+    background-color: rgb(246, 246, 246); 
+    font-size: 16px;  
+    padding: 1.2% 15%;     
+    color: rgb(167, 17, 3); 
+  }  
+
+  #filho1 p{
+      color:#28282B;
+  }
+
+  #filho2 {
+    background-color: rgb(246, 246, 246);
+    color: rgb(167, 17, 3);       
+  }
+
+  #filho2 h3{
+    text-align: center; 
+  }
+  
+  .forjade{
+    display: flex;
+    flex-direction: column; 
+    width: 60%;  
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #28282B;
+    font-weight: bold;
+    font-size: 0.95em;
+    background-color: rgb(246, 246, 246);
+    border: solid 10px rgb(167, 17, 3);  
+    border-radius: 5px;
+  }
+  
+  .itemcon input{
+    background-color: #DBDBDB;
+    border: 1px solid #CCCCCC;
+    border-left: 4px solid rgb(167, 17, 3);   
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 2px;
+    width: 50%;
+  }
+  
+  .itemcon textarea{
+    background-color: #DBDBDB;    
+    border: 1px solid #CCCCCC;  
+    border-radius: 5px;   
+    height: 150px;
+    width:80%;   
+  }
+  
+  .butjad button{
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: rgb(167, 17, 3);
+    padding: 6px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px #28282B;
+    cursor: pointer;
+    width: 60px;
+  }
+
+/* 
+    Fim do CSS da página fale-conosco.html ~Jade
+*/
